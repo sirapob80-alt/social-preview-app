@@ -1,7 +1,7 @@
 (()=>{
  const cache=new Map();
  const style=document.createElement('style');
- style.textContent='.linkroom-preview{margin-top:8px}.linkroom-preview-card{display:inline-block;width:min(520px,88vw);text-align:left;background:#151821;border:1px solid #292e39;border-radius:16px;overflow:hidden}.linkroom-preview-card img{display:block;width:100%;max-height:620px;object-fit:cover;background:#0d0f14}.linkroom-preview-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 13px}.linkroom-preview-meta span{font-size:13px;color:#b7bdc9}.linkroom-preview-meta a{color:#8ea2ff;text-decoration:none;font-size:13px;font-weight:700}.linkroom-preview-fallback{padding:16px 13px;color:#a8aebb;font-size:13px}';
+ style.textContent='.linkroom-preview{margin-top:8px;width:100%}.linkroom-preview-card{display:block;width:100%;max-width:100%;text-align:left;background:#151821;border:1px solid #292e39;border-radius:16px;overflow:hidden}.linkroom-preview-card img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:#0d0f14}.linkroom-preview-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 13px}.linkroom-preview-meta span{font-size:13px;color:#b7bdc9}.linkroom-preview-meta a{color:#8ea2ff;text-decoration:none;font-size:13px;font-weight:700}.linkroom-preview-fallback{padding:16px 13px;color:#a8aebb;font-size:13px}';
  document.head.appendChild(style);
  function igUrl(text){
   const m=String(text||'').match(/https?:\/\/(?:www\.)?instagram\.com\/[^\s]+/i);
